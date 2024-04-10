@@ -1,1 +1,1 @@
-#debug
+DEBUG
