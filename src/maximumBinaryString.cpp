@@ -1,10 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#include "maximumBinaryString.h"
 
-using namespace std;
-
-string maximumBinaryString(string b) {
+std::string maximumBinaryString(std::string b) {
     int len = b.size();
     int j = 0;
     for(int i = 0; i < len - 1; i++){
@@ -19,11 +15,4 @@ string maximumBinaryString(string b) {
         }
     }
     return b;
-}
-
-int main(){
-    string b = "000110";
-    string ans = maximumBinaryString(b);
-    cout << ans;
-    return 0;
 }
