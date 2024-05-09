@@ -4,6 +4,8 @@
 #include "findChampion.h"
 #include "lengthoflongestsubstring.h"
 #include "minSubArrayLen.h"
+#include "exist.h"
+#include "waterplant.h"
 using namespace std;
 
 int main(){
@@ -42,9 +44,21 @@ int main(){
     
     // string ss = "abcabcbb";
     // cout << lengthOfLongestSubstring(ss) << endl;
-    vector<int> nums(14);
-    for(auto& n : nums)
-        cin >> n;
-    cout << minSubArrayLen(80, nums) << endl;
+    // vector<int> nums(14);
+    // for(auto& n : nums)
+    //     cin >> n;
+    // cout << minSubArrayLen(80, nums) << endl;
+    // char b[3][4] = {{'a', 'b', 'c', 'e'}, {'s', 'f', 'c', 's'}, {'a', 'd', 'e', 'e'}};
+    // vector<vector<char> > board(3, vector<char>(4));
+    // for(int i = 0; i < 3; i++)
+    //     for(int j = 0; j < 4; j++)
+    //         board[i][j] = b[i][j];
+    // string word = "abcb";
+    // cout << exist(board, word);
+    int p[7] = {7,7,7,7,7,7,7};
+    vector<int> pp(7, 0);
+    for(int i = 0; i < 7; ++i)
+        pp[i] = p[i];
+    cout << minimumRefill(pp, 7, 8);
     return 0;
 }
